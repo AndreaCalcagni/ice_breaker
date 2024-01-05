@@ -10,6 +10,8 @@ openai = "*"
 huggingface-hub = "*"
 transformers = "*"
 text-generation = "*"
+install = "*"
+google-search-results = "*"
 
 [dev-packages]
 
