@@ -10,7 +10,7 @@ def lookup(name: str) -> str:
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
     template = """given the full name {name_of_person} I want you to get a link to their Linkedin profile page.
     Your answer should only contain a URL. The LinkedIn URL should be in the format of 'https://www.linkedin.com/<profile-id>'.
-    the url should not contain /pub/dir/"""
+    the url should not contain /pub/dir/. The url should not contain /posts/"""
 
     tools_for_agent = [
         Tool(

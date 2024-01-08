@@ -14,10 +14,14 @@ class PersonIntel(BaseModel):
     )
 
     def to_dict(self):
-        return {"summary": self.summary,
-                "facts": self.facts,
-                "topics_of_interest": self.topics_of_interest,
-                "ice_breakers": self.ice_breakers
-                }
+        return {
+            "summary": self.summary,
+            "facts": self.facts,
+            "topics_of_interest": self.topics_of_interest,
+            "ice_breakers": self.ice_breakers,
+        }
 
-person_intel_parser:PydanticOutputParser = PydanticOutputParser(pydantic_object=PersonIntel)
+
+person_intel_parser: PydanticOutputParser = PydanticOutputParser(
+    pydantic_object=PersonIntel
+)

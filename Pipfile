@@ -12,6 +12,7 @@ transformers = "*"
 text-generation = "*"
 install = "*"
 google-search-results = "*"
+flask = "*"
 
 [dev-packages]
 
